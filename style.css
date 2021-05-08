@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+main {
+    max-width: 85%;
+    margin: 60px auto;
+}
+
+
+/* first section styles */
+
+
+.title-container {
+    width: auto;
+    text-align: center;
+}
+
+.title-container h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 2.3rem;
+    letter-spacing: -0.2rem;
+    line-height: 1;
+}
+
+.title-container h2 {
+    margin-top: 20px;
+    color: hsl(303, 10%, 53%);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.score-container {
+    margin-top: 40px;
+    width: auto;
+}
+
+.score-item {
+    margin-bottom: 10px;
+    min-height: 50px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 0.5rem;
+}
+
+.score-item .stars {
+    margin-bottom: 10px;
+    background-image: url(./images/icon-star.svg);
+    width: 85px;
+    height: 20px;
+    background-repeat: repeat-x;
+}
+
+.score-item p {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 0.85rem;
+}
+
+
+/* second section styles */
+
+
+.customer-container {
+    margin-top: 40px;
+    width: auto;
+}
+
+.customer-card {
+    margin-bottom: 10px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    padding: 30px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.customer-card .img-profile {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.customer-card .img-profile,
+#first-img {
+    background-image: url(./images/image-colton.jpg);
+}
+
+.customer-card .img-profile,
+#second-img {
+    background-image: url(./images/image-irene.jpg);
+}
+
+.customer-card .img-profile,
+#third-img {
+    background-image: url(./images/image-anne.jpg);
+}
+
+.customer-card .name {
+    font-weight: 500;
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+
+.customer-card .buyer {
+    font-weight: 500;
+    color: hsl(333, 80%, 67%);
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.customer-card .testimonials {
+    line-height: 1.2rem;
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+/* footer styles */
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* media-queries
+
+@media (min-width: 768px) {
+
+    main {
+        width: 80%;
+    }
+
+    .customer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .customer-card:nth-child(2) {
+        position: relative;
+        top: 20px;
+    }
+
+    .customer-card:nth-child(3) {
+        position: relative;
+        top: 40px;
+    }
+
+} */
